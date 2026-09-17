@@ -1,0 +1,67 @@
+{
+  "k": 4,
+  "colunas_numericas": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "num_servicos_adicionais"
+  ],
+  "colunas_categoricas": [
+    "Contract",
+    "InternetService"
+  ],
+  "colunas_binarias": [
+    "SeniorCitizen",
+    "PaperlessBilling"
+  ],
+  "perfis": [
+    {
+      "cluster": 0,
+      "tamanho": 1528,
+      "tenure_medio": 30.58,
+      "mensalidade_media": 21.09,
+      "total_gasto_medio": 663.66,
+      "servicos_adicionais_medio": 0.0,
+      "taxa_churn": 0.07,
+      "pct_base": 21.7,
+      "nome": "Só Telefone, Estáveis",
+      "descricao": "Sem internet, só telefone. Mensalidade baixa, churn muito baixo (7%). Sem prioridade de retenção."
+    },
+    {
+      "cluster": 1,
+      "tamanho": 2021,
+      "tenure_medio": 59.69,
+      "mensalidade_media": 90.42,
+      "total_gasto_medio": 5385.69,
+      "servicos_adicionais_medio": 4.1,
+      "taxa_churn": 0.13,
+      "pct_base": 28.7,
+      "nome": "Premium Fidelizados",
+      "descricao": "Maior tenure e maior gasto histórico, muitos serviços adicionais, contratos longos. Churn moderado-baixo (13%). Proteger ativamente -- são os clientes de maior valor."
+    },
+    {
+      "cluster": 2,
+      "tamanho": 1649,
+      "tenure_medio": 19.34,
+      "mensalidade_media": 51.34,
+      "total_gasto_medio": 1013.96,
+      "servicos_adicionais_medio": 1.86,
+      "taxa_churn": 0.26,
+      "pct_base": 23.4,
+      "nome": "DSL em Transição",
+      "descricao": "100% DSL, tenure baixo-médio, maioria em contrato mensal. Churn moderado (26%). Clientes ainda 'decidindo' se ficam."
+    },
+    {
+      "cluster": 3,
+      "tamanho": 1845,
+      "tenure_medio": 15.58,
+      "mensalidade_media": 84.82,
+      "total_gasto_medio": 1347.21,
+      "servicos_adicionais_medio": 1.63,
+      "taxa_churn": 0.57,
+      "pct_base": 26.2,
+      "nome": "Fibra de Alto Risco",
+      "descricao": "100% fibra óptica, quase todos em contrato mensal, menor tenure, mensalidade alta. Churn altíssimo (57%). Prioridade máxima de retenção estrutural."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "threshold_decisao": 0.15,
+  "metrica_principal": "F1 / Recall da classe positiva (Churn=Yes)",
+  "features_esperadas_input": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges",
+    "num_servicos_adicionais",
+    "cobranca_media_mensal_historica"
+  ],
+  "metricas_teste_threshold_final": {
+    "accuracy": 0.6593,
+    "precision": 0.4329,
+    "recall": 0.9144,
+    "f1": 0.5876,
+    "roc_auc": 0.8453,
+    "pr_auc": 0.6623
+  },
+  "premissas_de_negocio": {
+    "classe_positiva": "Churn = Yes",
+    "custo_assumido": "falso negativo mais caro que falso positivo",
+    "observacao": "ajuste THRESHOLD_FINAL se o custo real de negócio for diferente do assumido"
+  },
+  "data_treinamento": "ver notebook -- ambiente sem acesso a relógio de sistema no momento da geração"
+}
